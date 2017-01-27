@@ -15,7 +15,6 @@ var browserify = require('browserify'),
     streamify = require('gulp-streamify'),
     symlink = require('gulp-symlink'),
     uglify = require('gulp-uglify'),
-    watchify = require('watchify'),
     _ = require('lodash');
 
 /////////////////////////
@@ -53,9 +52,9 @@ gulp.task('build:vendor', function () {
         gutil.log("Build Error!!  error:" + err);
     })
         .pipe(source('vendor.js'))
-        .pipe(streamify(sourcemaps.init()))
-        .pipe(streamify(uglify()))
-        .pipe(streamify(sourcemaps.write(outputMapFolder)))
+        // .pipe(streamify(sourcemaps.init()))
+        // .pipe(streamify(uglify()))
+        // .pipe(streamify(sourcemaps.write(outputMapFolder)))
         .pipe(gulp.dest('dist/js/'))
 });
 
