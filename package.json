@@ -7,6 +7,33 @@
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies":{
+    "angular": "1.5.8",
+    "angular-ui-router": "^1.0.0-rc.1",
+    "angular-sanitize": "^1.5.8"
+  },
+   "devDependencies": {
+    "browserify": "13.3.0",
+    "browserify-shim": "3.8.12",
+    "gulp": "3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-streamify": "1.0.2",
+    "gulp-symlink": "2.1.4",
+    "gulp-uglify": "2.0.1",
+    "gulp-util": "3.0.8",
+    "require-dir": "^0.3.1",
+    "rimraf": "~2.5.4",
+    "run-sequence": "^1.2.2"
+   },
   "author": "george pilitsoglou",
   "license": "ISC",
   "engines": {
