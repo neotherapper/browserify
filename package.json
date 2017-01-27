@@ -1,0 +1,16 @@
+{
+  "name": "browserify",
+  "version": "1.0.0",
+  "description": "Test for bundling",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "george pilitsoglou",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 4.2.1",
+    "npm": ">= 3"
+  }
+}
