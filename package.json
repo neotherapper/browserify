@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
+    "clean:dist": "npm run rimraf -- dist",
+    "prebuild": "npm run clean:dist",
+    "rimraf": "rimraf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies":{
@@ -32,7 +35,8 @@
     "gulp-util": "3.0.8",
     "require-dir": "^0.3.1",
     "rimraf": "~2.5.4",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "1.1.0"
    },
   "author": "george pilitsoglou",
   "license": "ISC",
